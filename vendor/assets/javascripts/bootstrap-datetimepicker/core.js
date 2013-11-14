@@ -1164,7 +1164,7 @@
                 DPGlobal.template +
               '</div>' +
             '</li>' +
-            '<li class="picker-switch accordion-toggle"><a><i class="' + timeIcon + '"></i></a></li>' +
+            '<li class="picker-switch accordion-toggle"><a><span class="glyphicon ' + timeIcon + '"></span></a></li>' +
             '<li' + (collapse ? ' class="collapse"' : '') + '>' +
               '<div class="timepicker">' +
                 TPGlobal.getTemplate(is12Hours, showSeconds) +
