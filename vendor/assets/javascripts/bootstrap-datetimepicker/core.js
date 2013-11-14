@@ -981,10 +981,8 @@
             if (collapseData && collapseData.transitioning) return;
             expanded.collapse('hide');
             closed.collapse('show')
-            $this.find('i').toggleClass(self.timeIcon + ' ' + self.dateIcon);
-            icon = self.$element.find('.input-group-addon span.glyphicon');
-            icon.toggleClass(self.timeIcon + ' ' + self.dateIcon);
-            alert('test');
+            $this.find('span.glyphicon').toggleClass(self.timeIcon + ' ' + self.dateIcon);
+            self.$element.find('.input-group-addon span.glyphicon').toggleClass(self.timeIcon + ' ' + self.dateIcon);
           }
         });
       }
