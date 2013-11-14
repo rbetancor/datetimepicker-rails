@@ -213,3 +213,6 @@ ul.bootstrap-datetimepicker-widget
   background:#eee;
 }
 
+.bootstrap-datetimepicker-widget .accordion-toggle {
+    cursor: pointer;
+}

@@ -973,14 +973,17 @@
           e.stopPropagation();
           var $this = $(this);
           var $parent = $this.closest('ul');
-          var expanded = $parent.find('.collapse.in');
-          var closed = $parent.find('.collapse:not(.in)');
+          //var expanded = $parent.find('.collapse.in'); // check for classname "collapse" does not work, because of a bug in current bootstrap (3.0.1)
+          //var closed = $parent.find('.collapse:not(.in)'); // bootstrap removes all other classname attributes on each call of .collapse()
+
+          var expanded = $parent.find('li.in:not(.picker-switch)');
+          var closed = $parent.find('li:not(.in):not(.picker-switch)');
 
           if (expanded && expanded.length) {
             var collapseData = expanded.data('collapse');
             if (collapseData && collapseData.transitioning) return;
-            expanded.collapse('hide');
-            closed.collapse('show')
+            expanded.collapse('toggle');
+            closed.collapse('toggle')
             $this.find('span.glyphicon').toggleClass(self.timeIcon + ' ' + self.dateIcon);
             self.$element.find('.input-group-addon span.glyphicon').toggleClass(self.timeIcon + ' ' + self.dateIcon);
           }
