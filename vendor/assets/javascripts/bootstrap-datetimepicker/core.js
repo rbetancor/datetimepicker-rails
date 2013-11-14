@@ -983,6 +983,7 @@
             closed.collapse('show')
             $this.find('i').toggleClass(self.timeIcon + ' ' + self.dateIcon);
             self.$element.find('.input-group-addon span.glyphicon').toggleClass(self.timeIcon + ' ' + self.dateIcon);
+            alert('test')
           }
         });
       }
