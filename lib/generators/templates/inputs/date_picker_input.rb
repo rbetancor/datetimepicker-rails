@@ -11,7 +11,8 @@ class DatePickerInput < SimpleForm::Inputs::StringInput
                                        date_weekstart: I18n.t('datepicker.weekstart', :default => 0) })
 
     template.content_tag :div, class: 'input-group date datepicker' do
-      input = super # leave StringInput do the real rendering
+      #input = super # leave StringInput do the real rendering
+      input = @builder.input_field(attribute_name, input_html_options)
       input += template.content_tag :span, class: 'input-group-addon' do
         template.content_tag :span, '', class: 'glyphicon glyphicon-calendar', data: { 'time-icon' => 'glyphicon-time', 'date-icon' => 'glyphicon-calendar' }
       end
