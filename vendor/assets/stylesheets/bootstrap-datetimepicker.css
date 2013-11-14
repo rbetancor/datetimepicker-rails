@@ -67,7 +67,7 @@
   left:7px;
 }
 
-.bootstrap-datetimepicker-widget>ul
+ul.bootstrap-datetimepicker-widget
 {
   list-style-type:none;
   margin:0;
