@@ -81,7 +81,7 @@ ul.bootstrap-datetimepicker-widget
   font-size:1.2em;
 }
 
-.bootstrap-datetimepicker-widget table[data-hour-format=12] .separator
+.bootstrap-datetimepicker-widget table[data-hour-format="12"] .separator
 {
   width:4px;
   margin:0;
