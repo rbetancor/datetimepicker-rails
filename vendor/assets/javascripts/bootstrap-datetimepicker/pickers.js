@@ -1,6 +1,7 @@
 $(function() {
     $('.datepicker').datetimepicker({
-        pickTime: false
+        pickTime: false,
+        endDate: '-0d'
     });
 });
 
