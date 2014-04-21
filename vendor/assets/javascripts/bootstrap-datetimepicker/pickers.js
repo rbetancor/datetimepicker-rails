@@ -1,18 +1,14 @@
 $(function() {
-    $('.datepicker').datetimepicker({
+    $('.datepicker input[text]').datetimepicker({
         pickTime: false,
         endDate: '-0d'
     });
-});
-
-$(function() {
-    $('.datetimepicker').datetimepicker({
+    
+    $('.datetimepicker input[text]').datetimepicker({
         pickSeconds: false
     });
-});
-
-$(function() {
-    $('.timepicker').datetimepicker({
+    
+    $('.timepicker input[text]').datetimepicker({
         pickDate: false,
         pickSeconds: false
     });
